@@ -37,10 +37,10 @@ for dir_name in os.listdir(data_path):
         #Chuyển file ảnh
         x = random.randint(1, 100)
         
-        if TEMP1 < 100 and x <= 20:
+        if TEMP1 < 400 and x <= 20:
             shutil.copy(file_path, result_path_validation)
             TEMP1 += 1
-        elif TEMP2 < 50 and (x > 20 and x <= 35) :
+        elif TEMP2 < 200 and (x > 20 and x <= 35) :
             shutil.copy(file_path, result_path_test)
             TEMP2 += 1
         else:
